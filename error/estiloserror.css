@@ -1,0 +1,145 @@
+html {font-family: 'Bebas Neue', cursive;
+    font-family: 'VT323', monospace;
+    font-size:20px;}
+
+*{margin: 0; padding: 0;}
+
+body {
+    
+        background-image: url(imagenes/fondofinal.gif);
+    
+        background-repeat: no-repeat;
+    
+        
+    }
+
+.viewport {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+@keyframes knife {
+    
+    0% { transform: translateY(525px);
+        
+    }
+    
+   
+    
+    50% {
+        transform: translateY(100px);
+        
+        }
+    
+    100% { transform: translateY(525px);
+    }
+}
+
+
+
+@keyframes sign {
+    
+    0% { 
+        
+        transform: translateX(650px);
+        
+        
+    }
+    
+    50% {
+        
+        transform: translateX(0);
+        
+        
+    }
+    
+    100% {
+        
+        transform: translateX(650px);
+    
+    }
+    
+}
+
+@keyframes error1 {
+    
+    0% { transform: translateX(0);
+        
+        
+    }
+    
+    50% {
+        
+        transform: translateX(745px);
+          
+        
+    }
+    
+    100% { transform: translateX(0);}
+    
+}
+
+
+
+.error {
+    
+    position: absolute;
+    top:150px;
+    color: deeppink;
+    left: 100px;
+    font-size: 55px;
+    animation-name: error1;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+}
+
+
+.texto {
+    
+    padding: 15px;
+    background-color: white;
+    position: absolute;
+    width: 250px;
+    top: 200px;
+    left: 800px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    text-align: center; 
+    animation-name: sign;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+}
+
+.cuchillo img {
+    
+    position: absolute;
+    width: 130px;
+    top: 60px;
+    left: 1278px;
+    animation-name: knife;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    
+  
+
+}
+
+.inicio {
+    color: lightpink;
+    position: absolute;
+    top: 50px;
+    left: 1255px;
+    font-size: 25px;
+    text-align: center;
+    background-color: greenyellow;
+    padding: 5px;
+   
+   
+    
+}
+
+.inicio a {
+    text-decoration: none;
+}
